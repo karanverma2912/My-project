@@ -1,0 +1,6 @@
+<%if flash[:notice]%>
+  <h1 style="color: green"><%=flash[:notice]%></h1>
+<%end%>
+<h1>Home Page</h1>
+<%= link_to 'Create NewUser', "/clients/new" %> <br><br>
+<%= link_to 'login', '/clients/login' %>

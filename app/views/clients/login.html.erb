@@ -1,0 +1,18 @@
+<%#if flash[:login]%>
+    <h1 style = "color: red"> <%= flash[:login] %> </h1>
+<%# end %>
+<%= form_with model: @client, url: '/is_login' do |form| %>
+	<div>
+        <%= form.label :user_name %> <br>
+        <%= form.text_field :user_name %> <br>
+    </div>
+
+    <div>
+        <%= form.label :password %> <br>
+        <%= form.text_area :password %> <br>
+    </div>
+
+    <div>
+        <%= form.submit "Login"   %>
+    </div>
+ <% end %>
