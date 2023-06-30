@@ -1,0 +1,4 @@
+  <h1 style="color: green"><%=flash[:login]%></h1>
+  <% @user = session[:current_user_id] %>
+  <h1> Welcome <%=@user %></h1>
+  <%= link_to 'Log Out', '/logout'%>

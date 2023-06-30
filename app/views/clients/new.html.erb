@@ -1,4 +1,6 @@
-<%= form_with model: @client  do |form| %>
+<h1 style="color: red"><%=flash[:wrong]%></h1>
+
+<%= form_with model: @client do |form| %>
 	<div>
         <%= form.label :user_name %> <br>
         <%= form.text_field :user_name %> <br>
@@ -8,7 +10,7 @@
         <%= form.label :password %> <br>
         <%= form.text_field :password %> <br>
     </div>
-
+    <br>
     <div>
         <%= form.submit %>
     </div>

@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   # get '/:status', to: 'users#index' #,  foo: 'activated'
   get '/clients/login', to: 'clients#login'
   # post '/show', to: 'clients#show'
-  post '/is_login' => 'clients#is_login'
+  post '/is_login' , to: 'clients#is_login'
+  get '/home', to: 'clients#home'
+  get '/logout', to: 'clients#logout'
   resources :users
   resources :clients
 
